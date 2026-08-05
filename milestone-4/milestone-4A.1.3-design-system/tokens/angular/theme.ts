@@ -1,0 +1,1 @@
+export const theme={primary:'var(--color-primary)'};
