@@ -1,0 +1,26 @@
+# Generated exports
+exports/*.docx
+exports/*.pdf
+
+# IDE and OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Build and package artifacts
+node_modules/
+target/
+dist/
+build/
+coverage/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log

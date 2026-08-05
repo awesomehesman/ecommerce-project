@@ -1,0 +1,10 @@
+{
+  "milestone": "2",
+  "name": "Platform Architecture and Domain Design",
+  "version": "0.3.0",
+  "branch_target": "develop",
+  "recommended_branch": "architecture/platform-foundation",
+  "recommended_commit": "docs(architecture): define platform domain quality and cloud baselines",
+  "generated_date": "2026-08-05",
+  "file_count": 28
+}
