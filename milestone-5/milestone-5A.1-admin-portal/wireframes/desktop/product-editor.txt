@@ -1,0 +1,2 @@
+Product Editor
+Tabs: General | Variants | Media | SEO | Publish
