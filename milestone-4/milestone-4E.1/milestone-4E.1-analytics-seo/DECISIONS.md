@@ -1,1 +1,0 @@
-GA4 and JSON-LD
