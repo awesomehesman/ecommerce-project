@@ -1,0 +1,1 @@
+Administration capabilities mapped to platform services.
