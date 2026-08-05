@@ -1,0 +1,10 @@
+openapi: 3.1.0
+paths:
+  /products:
+    get:
+      summary: List products
+    post:
+      summary: Create product
+  /products/{id}/publish:
+    post:
+      summary: Publish product
