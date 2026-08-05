@@ -1,0 +1,2 @@
+# Avatar
+Image, initials fallback.

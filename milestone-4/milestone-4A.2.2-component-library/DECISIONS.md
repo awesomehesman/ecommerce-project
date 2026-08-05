@@ -1,0 +1,1 @@
+# Overlay components use Angular CDK where applicable

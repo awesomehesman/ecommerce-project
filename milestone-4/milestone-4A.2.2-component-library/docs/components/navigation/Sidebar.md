@@ -1,0 +1,2 @@
+# Sidebar
+Collapsible admin navigation.
