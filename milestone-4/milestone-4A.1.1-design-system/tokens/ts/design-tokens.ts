@@ -1,0 +1,1 @@
+export const DesignTokens={primary:'#111111',space4:16,radiusMd:8};
