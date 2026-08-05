@@ -1,0 +1,2 @@
+# Decisions
+Standalone Angular components.
