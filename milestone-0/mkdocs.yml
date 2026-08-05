@@ -1,0 +1,22 @@
+site_name: Premium Clothing E-Commerce Platform
+site_description: Engineering and product specification
+theme:
+  name: material
+nav:
+  - Home: README.md
+  - Foundation:
+      - Project Charter: docs/foundation/00-Project-Charter.md
+      - Executive Summary: docs/foundation/01-Executive-Summary.md
+      - Documentation Standards: docs/foundation/02-Documentation-Standards.md
+      - Requirement Conventions: docs/foundation/03-Requirement-Conventions.md
+      - Delivery Roadmap: docs/foundation/04-Delivery-Roadmap.md
+  - Technical Direction: docs/reference/00-Technical-Direction.md
+  - Architecture Decisions:
+      - ADR-0001 Modular Monolith: adr/ADR-0001-modular-monolith.md
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
