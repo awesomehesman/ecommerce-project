@@ -1,0 +1,1 @@
+Angular standalone admin application with role-based access.

@@ -1,0 +1,1 @@
+Admin specifications mapped to catalogue APIs.
