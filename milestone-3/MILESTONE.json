@@ -1,0 +1,10 @@
+{
+  "milestone": "3",
+  "name": "Phase 1 Implementation Readiness",
+  "version": "0.4.0",
+  "branch_target": "develop",
+  "recommended_branch": "docs/phase-1-foundation",
+  "recommended_commit": "docs(phase1): specify authentication accounts shell and catalogue foundation",
+  "generated_date": "2026-08-05",
+  "file_count": 26
+}
