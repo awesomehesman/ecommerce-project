@@ -1,0 +1,2 @@
+# Asset Guidelines
+SVG preferred.

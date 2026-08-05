@@ -1,0 +1,2 @@
+# Controls
+Expose component inputs.
