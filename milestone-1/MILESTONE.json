@@ -1,0 +1,10 @@
+{
+  "milestone": "1",
+  "name": "Business Definition",
+  "version": "0.2.0",
+  "branch_target": "develop",
+  "recommended_branch": "docs/business-definition",
+  "recommended_commit": "docs(business): define requirements personas journeys and policies",
+  "generated_date": "2026-08-05",
+  "file_count": 14
+}
