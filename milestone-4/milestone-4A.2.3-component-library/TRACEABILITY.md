@@ -1,1 +1,0 @@
-# Commerce components mapped to storefront pages
