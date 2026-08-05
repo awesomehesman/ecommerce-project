@@ -1,0 +1,7 @@
+flowchart LR
+Browser --> Analytics
+Browser --> FrontendTelemetry
+FrontendTelemetry --> Monitoring
+API --> ApplicationInsights
+ApplicationInsights --> Monitoring
+Monitoring --> Alerts

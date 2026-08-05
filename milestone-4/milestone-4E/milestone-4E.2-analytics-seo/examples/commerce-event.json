@@ -1,0 +1,15 @@
+{
+  "event": "add_to_cart",
+  "eventId": "evt-example",
+  "currency": "ZAR",
+  "value": 899.99,
+  "items": [
+    {
+      "itemId": "product-id",
+      "itemVariant": "variant-id",
+      "itemName": "Premium Hoodie",
+      "quantity": 1,
+      "price": 899.99
+    }
+  ]
+}
