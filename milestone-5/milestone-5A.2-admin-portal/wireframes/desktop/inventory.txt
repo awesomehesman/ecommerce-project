@@ -1,0 +1,2 @@
+Inventory Dashboard
+Stock | Low Stock | Adjustments
