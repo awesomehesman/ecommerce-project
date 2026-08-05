@@ -1,0 +1,133 @@
+openapi: 3.1.0
+info:
+  title: Premium Clothing E-Commerce API - Phase 1
+  version: 0.4.0
+servers:
+  - url: /api/v1
+paths:
+  /auth/register:
+    post:
+      summary: Register a customer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '201':
+          description: Registered
+        '409':
+          description: Email already registered
+  /auth/login:
+    post:
+      summary: Authenticate a user
+      responses:
+        '200':
+          description: Authenticated
+        '401':
+          description: Invalid credentials
+        '429':
+          description: Rate limited
+  /auth/forgot-password:
+    post:
+      summary: Request password reset
+      responses:
+        '202':
+          description: Accepted
+  /auth/reset-password:
+    post:
+      summary: Reset password
+      responses:
+        '204':
+          description: Reset
+  /auth/me:
+    get:
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Current identity
+  /customers/me:
+    get:
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Customer profile
+    patch:
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Updated profile
+  /customers/me/addresses:
+    get:
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Addresses
+    post:
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Address created
+  /admin/products:
+    get:
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Admin product page
+    post:
+      security:
+        - bearerAuth: []
+      responses:
+        '201':
+          description: Draft product created
+  /admin/products/{productId}/publish:
+    post:
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: productId
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Product published
+        '422':
+          description: Publication validation failed
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    RegisterRequest:
+      type: object
+      required: [firstName, lastName, email, password, acceptTerms]
+      properties:
+        firstName:
+          type: string
+          maxLength: 100
+        lastName:
+          type: string
+          maxLength: 100
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+        acceptTerms:
+          type: boolean
+          const: true
+        marketingConsent:
+          type: boolean
+          default: false
