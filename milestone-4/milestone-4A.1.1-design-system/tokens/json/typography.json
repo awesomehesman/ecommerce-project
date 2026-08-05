@@ -1,0 +1,11 @@
+{
+  "fontFamily": "Inter",
+  "h1": {
+    "size": "48px",
+    "weight": 700
+  },
+  "body": {
+    "size": "16px",
+    "weight": 400
+  }
+}
