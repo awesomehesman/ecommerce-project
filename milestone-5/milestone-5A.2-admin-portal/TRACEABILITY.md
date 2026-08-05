@@ -1,0 +1,1 @@
+Admin modules mapped to domain services.
