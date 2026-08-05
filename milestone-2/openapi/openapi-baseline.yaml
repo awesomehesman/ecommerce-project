@@ -1,0 +1,36 @@
+openapi: 3.1.0
+info:
+  title: Premium Clothing E-Commerce API
+  version: 0.3.0
+  description: Initial architecture baseline. Feature paths will be added in later milestones.
+servers:
+  - url: /api/v1
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Healthy
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    Problem:
+      type: object
+      properties:
+        type:
+          type: string
+        title:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
+        code:
+          type: string
+        correlationId:
+          type: string
