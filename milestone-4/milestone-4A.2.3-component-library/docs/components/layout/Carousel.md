@@ -1,2 +1,0 @@
-# Carousel
-Keyboard accessible carousel.
